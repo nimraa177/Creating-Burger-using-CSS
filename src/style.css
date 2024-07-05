@@ -1,0 +1,114 @@
+body {
+  background-color: #ebc28a;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 333px;
+  width: 333px;
+  background-color: lightblue;
+  border-radius: 50%;
+  margin: auto;
+  border-color: black;
+}
+.container {
+  /* width: 45%;
+  height: 250px; */
+  margin: 14% auto;
+  background-color: #ebc28a;
+  padding: 2rem 2rem 5rem 2rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.burger {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.burger-top {
+  width: 15vmin;
+  height: 8vmin;
+  background-color: #ee9d2e;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.burger-tomato {
+  width: 15vmin;
+  height: 10px;
+  background-color: #b4322e;
+  border-radius: 5px;
+  /* position: relative; */
+}
+.burger-lettuce {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  /* padding-bottom: 20px; /* Adjust to match the height of the scallops */
+}
+.lettuce {
+  width: 20px; /* Adjust the width as needed */
+  height: 13px; /* Adjust the height as needed */
+  background-color: #72b43e; /* green color for the lettuce */
+  border-radius: 0 0 50% 50%; /* Rounded bottom corners */
+  margin-right: -5px; /* Adjust to overlap the scallops */
+  z-index: 1;
+}
+.scallop:last-child {
+  margin-right: 0; /* Remove margin from the last scallop */
+}
+
+.scalloped-border::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 20px; /* Adjust to cover the top part of the scallops */
+  z-index: 2;
+}
+.burger-cheese {
+  width: 15vmin;
+  height: 12px;
+  background-color: #f2d658;
+  border-radius: 5px;
+  /* position: relative; */
+}
+.burger-pattie {
+  width: 15vmin;
+  height: 17px;
+  background-color: #6f4718;
+  border-radius: 5px;
+}
+.burger-top:hover,
+.burger-tomato:hover,
+.burger-lettuce:hover,
+.burger-pattie:hover {
+  margin-bottom: 2.5vmin;
+  cursor: pointer;
+  transition-property: margin-bottom;
+  transition-duration: 500ms;
+}
+
+.burger-bottom {
+  width: 15vmin;
+  height: 12px;
+  background-color: #ee9d2e;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  background-color: lightblue;
+  color: white;
+  text-align: center;
+}

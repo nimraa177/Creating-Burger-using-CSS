@@ -17,6 +17,9 @@ To get a local copy up and running, follow these steps:
 <h2>📝Usage</h2>
 To view the burger UI, open the <code>index.html </code>file in your preferred web browser.
 
+<h2>🤔How it can be improved</h2>
+<p>This can be improved by adding sesame on the burger-top div, furthermore it can be improved by making it more responsive.</p>
+
 <h2>Contributing</h2>
 Contributions are welcome! If you have any ideas or improvements, feel free to submit a pull request. Please make sure to follow the contribution guidelines.
 

@@ -28,3 +28,6 @@ Contributions are welcome! If you have any ideas or improvements, feel free to s
 <li>Commit Your Changes</li> <code>git commit -m 'Add some feature'</code>
 <li>Push to the Branch</li> <code>git push origin feature/YourFeature</code>
 <li>Open a Pull Request</li>
+
+<h2>📺How it looks</h2>
+![Screenshot 2024-07-05 072236](https://github.com/nimraa177/Creating-Burger-using-CSS/assets/58563145/1deb49f4-5bdf-4a68-9745-9c8bcf6a7e40)

@@ -1,5 +1,9 @@
 body {
-  background-color: #ebc28a;
+  background: url(./../Images/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* filter: blur(8px); */
+  height: 50vh;
 }
 
 .circle {
@@ -8,18 +12,25 @@ body {
   align-items: center;
   height: 333px;
   width: 333px;
-  background-color: lightblue;
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+  border: 3px solid #f1f1f1;
+  position: relative;
   border-radius: 50%;
+  top: 10rem;
+
   margin: auto;
 }
-.container {
+/* .container {
   margin: 14% auto;
-  background-color: #ebc28a;
+  height: 50vh;
+  background-color: rgb(0, 0, 0); 
+  background-color: rgba(0, 0, 0, 0.4); 
   padding: 2rem 2rem 5rem 2rem;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-}
+} */
 .burger {
   display: flex;
   flex-flow: column;
@@ -27,8 +38,8 @@ body {
   align-items: center;
 }
 .burger-top {
-  width: 15vmin;
-  height: 8vmin;
+  width: 12vmin;
+  height: 6vmin;
   background-color: #ee9d2e;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
@@ -36,21 +47,21 @@ body {
   border-bottom-right-radius: 5px;
 }
 .burger-tomato {
-  width: 15vmin;
+  width: 12vmin;
   height: 10px;
   background-color: #b4322e;
   border-radius: 5px;
   /* position: relative; */
 }
 .burger-lettuce {
-  width: 15vmin;
+  width: 12vmin;
   position: relative;
   display: flex;
   align-items: flex-end;
   overflow: hidden;
 }
 .lettuce {
-  width: 20px; /* Adjust the width as needed */
+  width: 12vmin; /* Adjust the width as needed */
   height: 13px; /* Adjust the height as needed */
   background-color: #72b43e; /* green color for the lettuce */
   border-radius: 0 0 50% 50%; /* Rounded bottom corners */
@@ -71,14 +82,14 @@ body {
   z-index: 2;
 }
 .burger-cheese {
-  width: 15vmin;
+  width: 12vmin;
   height: 12px;
   background-color: #f2d658;
   border-radius: 5px;
   /* position: relative; */
 }
 .burger-pattie {
-  width: 15vmin;
+  width: 12vmin;
   height: 17px;
   background-color: #6f4718;
   border-radius: 5px;
@@ -90,12 +101,13 @@ body {
   margin-bottom: 2.5vmin;
   cursor: pointer;
   transition-property: margin-bottom;
-  transition-duration: 500ms;
+  transition: 500ms;
+  transition-timing-function: ease-in-out;
 }
 
 .burger-bottom {
-  width: 15vmin;
-  height: 12px;
+  width: 12vmin;
+  height: 14px;
   background-color: #ee9d2e;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
